@@ -278,9 +278,9 @@ x^2 + y^2 = z^2
 <li>Some staff have developed their own <strong>custom solutions</strong>
 <ul>
 <li>Not essential you use Chirun</li>
-<li>But should ideally be web pages and accessible</li>
+<li>But should accessible and ideally web-based</li>
 </ul></li>
-<li>Chirun has the benefit of <strong>LTI connection</strong> with Blackboard</li>
+<li>Chirun has the benefit of <strong>integration with Blackboard</strong></li>
 <li>Plus <strong>local support</strong> available</li>
 </ul>
 </section>
@@ -343,7 +343,7 @@ x^2 + y^2 = z^2
 <section id="what-this-actually-looks-like" class="title-slide slide level1 center">
 <h1>What this actually looks like…</h1>
 <ul>
-<li><a href="https://lti.chirun.org.uk/media/chirun-packages/output/93503b6b-4fe1-49c2-b247-014283a108fb/index.html">Chirun reference template</a></li>
+<li><a href="https://lti.chirun.org.uk/media/chirun-packages/output/f38bbf7f-0a2e-4bd0-a0be-eff710e6bdb9/index.html">Linear Algebra notes in Chirun</a></li>
 </ul>
 </section>
 
@@ -379,6 +379,19 @@ x^2 + y^2 = z^2
 <li>Produce <strong>presentation slides</strong> directly from markdown</li>
 <li>Embed videos, interactive diagrams, Numbas tests and more…</li>
 </ul>
+<aside class="notes">
+<p><a href="https://lti.chirun.org.uk/media/chirun-packages/output/93503b6b-4fe1-49c2-b247-014283a108fb/index.html">Chirun reference template</a></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="where-to-get-help" class="slide level2">
 <h2>Where to get help</h2>
@@ -714,6 +727,11 @@ x^2 + y^2 = z^2
             if (link.dataset.originalHref !== undefined) {
               link.href = link.dataset.originalHref;
             }
+              // target, if specified
+              link.setAttribute("target", "_blank");
+              if (link.getAttribute("rel") === null) {
+                link.setAttribute("rel", "noopener");
+              }
           }
         }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
