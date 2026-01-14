@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "fec-slideshow-chirun.html#what-is-chirun",
+    "href": "fec-slideshow-chirun.html#what-is-chirun",
+    "title": "Chirun Update",
+    "section": "What is Chirun?",
+    "text": "What is Chirun?\n\nChirun is a tool that converts LaTeX to accessible web pages\nTraditionally, lecture notes containing equations are created in LaTeX\nTo this day, standard LaTeX editor only output to PDF (a format designed for print)\nPDFs are notoriously bad in terms of accessibility"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#how-does-latex-work",
+    "href": "fec-slideshow-chirun.html#how-does-latex-work",
+    "title": "Chirun Update",
+    "section": "How does LaTeX work?",
+    "text": "How does LaTeX work?\n\nSource CodeOutput\n\n\n\\section{Pythagorean theorem}\nThis is a theorem about right triangles and can be summarised in the next \nequation \n\\[ x^2 + y^2 = z^2 \\]\n\n\nPythagorean theorem\nThis is a theorem about right triangles and can be summarised in the next\n\\[\nx^2 + y^2 = z^2\n\\]"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#why-is-it-important",
+    "href": "fec-slideshow-chirun.html#why-is-it-important",
+    "title": "Chirun Update",
+    "section": "Why is it important?",
+    "text": "Why is it important?\n\n\nWe have a legal obligation to provide accessible learning materials.\nBut it’s also better for students (and staff)\nYet, we still have lots of PDFs being used\nChirun is a supported tool that can help"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#what-makes-an-equation-accessible",
+    "href": "fec-slideshow-chirun.html#what-makes-an-equation-accessible",
+    "title": "Chirun Update",
+    "section": "What makes an equation accessible?",
+    "text": "What makes an equation accessible?\nAccessible equations work for people and technologies, not just visually.\n\nPerceivable – not image-only\n\nOperable – navigable, not flattened\n\nUnderstandable – meaning, not just symbols\n\nRobust – works across tools\n\n\nBased on WCAG POUR principles"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#when-did-this-start",
+    "href": "fec-slideshow-chirun.html#when-did-this-start",
+    "title": "Chirun Update",
+    "section": "When did this start?",
+    "text": "When did this start?\n\nChirun introduced November 2024\n24/25 - worked with early adopters\nHelped build out support resources - Thank you 🙏"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#wider-adoption-this-year",
+    "href": "fec-slideshow-chirun.html#wider-adoption-this-year",
+    "title": "Chirun Update",
+    "section": "Wider adoption this year",
+    "text": "Wider adoption this year\nSome of our colleagues using Chirun:\n\n\nLeft to right: Simon Gardiner, Simon Mathias, Mohammad Anbar, Mark Miller, Will Coombs, Robert Potvliege, Sara Eugeni, Tom Lancaster, Ibrahim Inal, John Hunton, Oto-obong Inyang and Paul Sutcliffe."
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#is-chirun-the-only-tool-like-this",
+    "href": "fec-slideshow-chirun.html#is-chirun-the-only-tool-like-this",
+    "title": "Chirun Update",
+    "section": "Is Chirun the only tool like this?",
+    "text": "Is Chirun the only tool like this?\n\nNo, some similar tools exist, but no leading platform\nSome staff have developed their own custom solutions\n\nNot essential you use Chirun\nBut should ideally be web pages and accessible\n\nChirun has the benefit of LTI connection with Blackboard\nPlus local support available"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#step-1---check-for-compatibility-issues",
+    "href": "fec-slideshow-chirun.html#step-1---check-for-compatibility-issues",
+    "title": "Chirun Update",
+    "section": "Step 1 - Check for compatibility issues",
+    "text": "Step 1 - Check for compatibility issues\n\\documentclass[11pt]{report}\n\\usepackage{amssymb,amsmath,amsfonts}\n\\usepackage{graphicx,epsf,caption}\n\\usepackage{titling,epstopdf,empheq}\n\\usepackage{xcolor}\n\\usepackage[pdftex,pdftitle={LA notes 2025.pdf},pdflang={en-GB}]{hyperref}\n\\hypersetup{\n    colorlinks=true,\n    linktoc=all,\n    linkcolor=blue,\n}\nI spotted that the packages titling, epstopdf and empheq are not supported by Chirun.\n\nLinear Algebra notes, courtesy of Professor John Hunton."
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#step-2---remove-exclude-non-compatible-packages",
+    "href": "fec-slideshow-chirun.html#step-2---remove-exclude-non-compatible-packages",
+    "title": "Chirun Update",
+    "section": "Step 2 - Remove / exclude non-compatible packages",
+    "text": "Step 2 - Remove / exclude non-compatible packages\n\\documentclass[11pt]{report}\n\\usepackage[pdftex,pdftitle={LA notes 2025.pdf},pdflang={en-GB}]{hyperref}\n\\hypersetup{\n    colorlinks=true,\n    linktoc=all,\n    linkcolor=blue,\n}\n\\usepackage{chirun}\n...\n\\ifpdflatex\n    \\usepackage{empheq}\n    \\usepackage{epstopdf}\n    \\usepackage{titling}\n\\fi\n\\usepackage{amssymb,amsmath,amsfonts,graphicx,epsf,caption}\n\\usepackage{xcolor}\n\nLinear Algebra notes, courtesy of Professor John Hunton."
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#step-3---upload-to-chirun",
+    "href": "fec-slideshow-chirun.html#step-3---upload-to-chirun",
+    "title": "Chirun Update",
+    "section": "Step 3 - Upload to Chirun",
+    "text": "Step 3 - Upload to Chirun\n\nZip files\nBlackboard &gt; Content Market &gt; Chirun\nUpload and configure package \n\n\nLinear Algebra notes, courtesy of Professor John Hunton."
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#additional-capabilities",
+    "href": "fec-slideshow-chirun.html#additional-capabilities",
+    "title": "Chirun Update",
+    "section": "Additional Capabilities",
+    "text": "Additional Capabilities\nChirun can do more than LaTeX‑to‑HTML conversion:\n\nConvert markdown to HTML\nProduce presentation slides directly from markdown\nEmbed videos, interactive diagrams, Numbas tests and more…"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#where-to-get-help",
+    "href": "fec-slideshow-chirun.html#where-to-get-help",
+    "title": "Chirun Update",
+    "section": "Where to get help",
+    "text": "Where to get help\n\nChirun website - extensive documentation and demos\nDCAD Help Guides - additional local guidance and examples\nDCAD Digital Education Team - for one-to-one advice as well as training and workshops"
+  },
+  {
+    "objectID": "fec-slideshow-chirun.html#key-takeaways",
+    "href": "fec-slideshow-chirun.html#key-takeaways",
+    "title": "Chirun Update",
+    "section": "Key takeaways",
+    "text": "Key takeaways\n\nInaccessible PDFs are big issue for accessibility\nWe have a supported tool to address this\nIf this is an issue in your department, please consider using Chirun"
+  }
+]
