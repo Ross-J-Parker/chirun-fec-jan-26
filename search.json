@@ -49,18 +49,18 @@
     "text": "Is Chirun the only tool like this?\n\nNo, some similar tools exist, but no leading platform\nSome staff have developed their own custom solutions\n\nNot essential you use Chirun\nBut should accessible and ideally web-based\n\nChirun has the benefit of integration with Blackboard\nPlus local support available"
   },
   {
-    "objectID": "fec-slideshow-chirun.html#step-1---check-for-compatibility-issues",
-    "href": "fec-slideshow-chirun.html#step-1---check-for-compatibility-issues",
+    "objectID": "fec-slideshow-chirun.html#step-1---check-original-latex-notes",
+    "href": "fec-slideshow-chirun.html#step-1---check-original-latex-notes",
     "title": "Chirun Update",
-    "section": "Step 1 - Check for compatibility issues",
-    "text": "Step 1 - Check for compatibility issues\n\\documentclass[11pt]{report}\n\\usepackage{amssymb,amsmath,amsfonts}\n\\usepackage{graphicx,epsf,caption}\n\\usepackage{titling,epstopdf,empheq}\n\\usepackage{xcolor}\n\\usepackage[pdftex,pdftitle={LA notes 2025.pdf},pdflang={en-GB}]{hyperref}\n\\hypersetup{\n    colorlinks=true,\n    linktoc=all,\n    linkcolor=blue,\n}\nI spotted that the packages titling, epstopdf and empheq are not supported by Chirun.\n\nLinear Algebra notes, courtesy of Professor John Hunton."
+    "section": "Step 1 - Check original LaTeX notes",
+    "text": "Step 1 - Check original LaTeX notes\n\\documentclass[11pt]{report}\n\\usepackage{amssymb,amsmath,amsfonts}\n\\usepackage{graphicx,epsf,caption}\n\\usepackage{titling,epstopdf,empheq}\n\\usepackage{xcolor}\n\\usepackage[pdftex,pdftitle={LA notes 2025.pdf},pdflang={en-GB}]{hyperref}\n\\hypersetup{\n    colorlinks=true,\n    linktoc=all,\n    linkcolor=blue,\n}\nI spotted that the packages titling, epstopdf and empheq are not supported by Chirun.\n\nLinear Algebra notes, courtesy of Professor John Hunton."
   },
   {
-    "objectID": "fec-slideshow-chirun.html#step-2---remove-exclude-non-compatible-packages",
-    "href": "fec-slideshow-chirun.html#step-2---remove-exclude-non-compatible-packages",
+    "objectID": "fec-slideshow-chirun.html#step-2---fix-non-compatible-packages",
+    "href": "fec-slideshow-chirun.html#step-2---fix-non-compatible-packages",
     "title": "Chirun Update",
-    "section": "Step 2 - Remove / exclude non-compatible packages",
-    "text": "Step 2 - Remove / exclude non-compatible packages\n\\documentclass[11pt]{report}\n\\usepackage[pdftex,pdftitle={LA notes 2025.pdf},pdflang={en-GB}]{hyperref}\n\\hypersetup{\n    colorlinks=true,\n    linktoc=all,\n    linkcolor=blue,\n}\n\\usepackage{chirun}\n...\n\\ifpdflatex\n    \\usepackage{empheq}\n    \\usepackage{epstopdf}\n    \\usepackage{titling}\n\\fi\n\\usepackage{amssymb,amsmath,amsfonts,graphicx,epsf,caption}\n\\usepackage{xcolor}\n\nLinear Algebra notes, courtesy of Professor John Hunton."
+    "section": "Step 2 - Fix non-compatible packages",
+    "text": "Step 2 - Fix non-compatible packages\n\\documentclass[11pt]{report}\n\\usepackage[pdftex,pdftitle={LA notes 2025.pdf},pdflang={en-GB}]{hyperref}\n\\hypersetup{\n    colorlinks=true,\n    linktoc=all,\n    linkcolor=blue,\n}\n\\usepackage{chirun}\n...\n\\ifpdflatex\n    \\usepackage{empheq}\n    \\usepackage{epstopdf}\n    \\usepackage{titling}\n\\fi\n\\usepackage{amssymb,amsmath,amsfonts,graphicx,epsf,caption}\n\\usepackage{xcolor}\n\nLinear Algebra notes, courtesy of Professor John Hunton."
   },
   {
     "objectID": "fec-slideshow-chirun.html#step-3---upload-to-chirun",
